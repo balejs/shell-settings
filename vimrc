@@ -25,10 +25,16 @@ filetype plugin indent on    " required
 syntax on
 set hlsearch
 
+" one-stroke write
 nnoremap <S-w> :w!<cr>
+" one-stroke exit and save
 nnoremap <S-x> :xa!<cr>
+" one-stroke exit no save
 nnoremap <S-q> :qa!<cr>
+" search multiple lines (fuzzy search?)
 nnoremap <S-f> :BLines<cr>
+" move to beginning of function
+nnoremap <S-b> [m[{kk<cr>
 
 nnoremap s<Space> :Csearch symbol:<C-R><C-W>$<CR><CR><cr>
 map <C-t> :NERDTreeToggle<CR>
@@ -78,5 +84,6 @@ else
 "  let g:syntastic_check_on_wq = 0
 endif
 
-set colorcolumn=80,100
+" set colorcolumn=80,100
 highlight ColorColumn ctermbg=DarkGray
+set binary noendofline
