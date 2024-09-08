@@ -1,0 +1,8 @@
+RPROMPT="[%*]"
+export PATH=~/.local/bin:$PATH
+unsetopt nomatch
+unsetopt BEEP
+unsetopt share_history
+zstyle ':completion:::*:default' menu no select
+plugins=(git)
+ZSH_THEME='robbyrussell'
