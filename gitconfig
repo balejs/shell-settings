@@ -1,0 +1,24 @@
+[user]
+	name = Marco Ballesio
+	email = marco.ballesio@gmail.com
+[color]
+	ui = auto
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	b = branch -vv
+	c = commit
+	co = checkout
+	cp = cherry-pick
+	d = difftool
+	fp = format-patch
+	l = log --oneline
+	lp = d HEAD^
+	nuke = !git reset --hard && git clean -fd
+	r = rebase --interactive
+	s = status
+#	ol = log --graph --decorate --oneline
