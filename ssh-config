@@ -1,0 +1,18 @@
+Host home
+	User marco
+	HostName home-pi4.local
+
+Host quantumboar.github.com
+	Hostname github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_quantumboar
+
+Host marcoballesio_gmail.github.com
+	Hostname github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_marcoballesio_gmail
+
+Host balejs.github.com
+	Hostname github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_marcoballesio_gmail
