@@ -1,9 +1,6 @@
 #automatically switch to zsh
+chsh -s `which zsh`
 
-#install oh-my-zsh
-##NOTE: you need to exit from the shell that spawns automatically for the config to complete
-#sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 cp vimrc ~/.vimrc
 
