@@ -7,6 +7,12 @@ zstyle ':completion:::*:default' menu no select
 
 export CLICOLOR=1
 
+# Autocomplete from https://thevaluable.dev/zsh-completion-guide-examples/
+autoload -U compinit; compinit
+zstyle ':completion:*' completer _extensions _complete _approximate
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' menu select
+
 # Git prompt
 # Enabling and setting git info var to be used in prompt config.
 autoload -Uz vcs_info
